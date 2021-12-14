@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>true</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>incident</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message><![CDATA[<p>test run</p>]]></message>
+        <name>incident_create_main</name>
+        <order>300</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+	function userRecordtojson(gr) {
+		var obj = {};
+		for (var prop in gr) {
+			if (gr[prop]) {
+				obj[prop] = gr.getValue(prop);
+			}
+		}
+		return obj;
+	}
+
+	function glideRecordToJson(gr) {
+		var obj = {};
+		obj["title"] = gr.getValue("short_description");
+		obj["incident_url"] = 'https://' + gs.getProperty('instance_name') + '.service-now.com/' + current.getTableName() + '.do?sys_id=' + current.sys_id;
+		for (var prop in gr) {
+			if (gr[prop]) {
+				obj[prop] = gr.getValue(prop);
+
+				if (prop == "caller_id") {
+					var user_obj = {};
+					var user_sys_id = gr.getValue(prop);
+					var gr_user = new GlideRecord('sys_user');
+					gr_user.addQuery('sys_id', user_sys_id);
+					gr_user.query();
+					while (gr_user.next()) {
+						user_obj["name"] = gr_user.getValue("name");
+						user_obj["email"] = gr_user.getValue("email");
+					}
+					obj["caller_object"] = user_obj;
+				}
+				if (prop == "assignment_group") {
+					var user_group = new GlideRecord("sys_user_group");
+					var group_sys_id = gr.getValue(prop);
+					user_group.addQuery('sys_id', group_sys_id);
+					user_group.query();
+					while (user_group.next()) {
+						obj["assignment_group_object"] = userRecordtojson(user_group);
+					}
+				}
+				if (prop == "assigned_to") {
+					var assine_sys_id = gr.getValue(prop);
+					var assine = new GlideRecord('sys_user');
+					assine.addQuery('sys_id', assine_sys_id);
+					assine.query();
+					var user_obj1 = {};
+					while (assine.next()) {
+						user_obj1["name"] = assine.getValue("name");
+						user_obj1["email"] = assine.getValue("email");
+					}
+					obj["assigned_to_object"] = user_obj1;
+				}
+
+			}
+		}
+		return obj;
+	}
+	
+	function ExecuteRequest(url){
+		try {
+			if (current.x_734544_zendutyv3_escalation_priority == true) {
+				var r = new sn_ws.RESTMessageV2();
+				var obj = glideRecordToJson(current);
+
+				var body = JSON.stringify(obj);
+
+
+// 				var url = "http://a941-2409-4070-2c31-416c-79c7-1fc0-76df-21f6.ngrok.io/";
+				
+				
+				r.setEndpoint(url);
+
+				r.setHttpMethod("POST");
+				r.setRequestBody(body);
+				var response = r.execute();
+
+
+				var responseBody = response.haveError() ? response.getErrorMessage() : response.getBody();
+
+				var httpStatus = response.getStatusCode();
+
+
+				if (httpStatus >= 500) {
+					var gr_retry = new GlideRecord("x_734544_zendutyv3_retry_table");
+					gr_retry.initialize();
+					gr_retry.url = url;
+					gr_retry.body = body;
+					gr_retry.insert();
+
+				}
+				else if ((httpStatus == 200 || httpStatus == 201) && current.state == 1 ) {
+					responseBody = JSON.parse(responseBody);
+					var gr = new GlideRecord("x_734544_zendutyv3_incidents");
+					gr.initialize();
+					gr.message = current.short_description;
+					gr.summary = current.description;
+					gr.incident_id = current.sys_id;
+					gr.zenduty_id = responseBody.unique_id;
+					gr.incident_number = responseBody.incident,
+					gr.insert();
+				}
+			}
+
+		} catch (ex) {
+			var message = ex.getMessage();
+		}
+	}
+	var url = "http://8e4b-2409-4070-4e95-718b-4530-c656-869f-3ef1.ngrok.io";
+	var check_record_zen = new GlideRecord("x_734544_zendutyv3_incidents");
+	check_record_zen.addQuery("incident_id",current.sys_id);
+	check_record_zen.query();
+	if (current.state == 1 && !(check_record_zen.next()) ) {
+		url = url + "integration/servicenow/" + gs.getProperty("x_734544_zendutyv3.Integration Key") +"/";
+		ExecuteRequest(url);
+	}
+	else if (current.state != previous.state && !(check_record_zen.next()) ){
+		while(check_record_zen.next()){
+			var incident_id = check_record_zen.getValue("incident_number");
+		}
+		url = url + "incidents/" + incident_id + "/";
+		ExecuteRequest(url);
+	}
+
+
+
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-09 06:03:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c4e2367d879c01104f8765f73cbb353d</sys_id>
+        <sys_mod_count>86</sys_mod_count>
+        <sys_name>incident_create_main</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Zenduty V3" source="x_734544_zendutyv3">7a51ee59879001104f8765f73cbb359b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</sys_scope>
+        <sys_update_name>sys_script_c4e2367d879c01104f8765f73cbb353d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-14 09:29:17</sys_updated_on>
+        <template/>
+        <when>async_always</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=c4e2367d879c01104f8765f73cbb353d"/>
+</record_update>

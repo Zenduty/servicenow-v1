@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="incidents" language="en" table="x_734544_zendutyv3_incidents">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>incidents</label>
+            <language>en</language>
+            <name>x_734544_zendutyv3_incidents</name>
+            <plural>incidents</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-12-08 11:30:05</sys_created_on>
+            <sys_id>8acbba2987d001104f8765f73cbb35cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>incidents</sys_name>
+            <sys_package display_value="Zenduty V3" source="x_734544_zendutyv3">7a51ee59879001104f8765f73cbb359b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</sys_scope>
+            <sys_update_name>sys_documentation_x_734544_zendutyv3_incidents__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-12-08 11:30:05</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

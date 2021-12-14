@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="retry table" language="en" table="x_734544_zendutyv3_retry_table">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>retry table</label>
+            <language>en</language>
+            <name>x_734544_zendutyv3_retry_table</name>
+            <plural>retry tables</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-12-09 17:07:25</sys_created_on>
+            <sys_id>919299ca879441104f8765f73cbb35de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>retry table</sys_name>
+            <sys_package display_value="Zenduty V3" source="x_734544_zendutyv3">7a51ee59879001104f8765f73cbb359b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</sys_scope>
+            <sys_update_name>sys_documentation_x_734544_zendutyv3_retry_table__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-12-09 17:07:25</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
