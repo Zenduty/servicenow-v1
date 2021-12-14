@@ -135,22 +135,16 @@
 			var message = ex.getMessage();
 		}
 	}
-	var url = "http://8e4b-2409-4070-4e95-718b-4530-c656-869f-3ef1.ngrok.io";
+// 	var url = "http://8e4b-2409-4070-4e95-718b-4530-c656-869f-3ef1.ngrok.io";
+	var url = "https://www.zenduty.com/api";
 	var check_record_zen = new GlideRecord("x_734544_zendutyv3_incidents");
 	check_record_zen.addQuery("incident_id",current.sys_id);
 	check_record_zen.query();
 	if (current.state == 1 && !(check_record_zen.next()) ) {
-		url = url + "integration/servicenow/" + gs.getProperty("x_734544_zendutyv3.Integration Key") +"/";
+		url = url + "/integration/servicenow/" + gs.getProperty("x_734544_zendutyv3.Integration Key") +"/";
 		ExecuteRequest(url);
 	}
-	else if (current.state != previous.state && !(check_record_zen.next()) ){
-		while(check_record_zen.next()){
-			var incident_id = check_record_zen.getValue("incident_number");
-		}
-		url = url + "incidents/" + incident_id + "/";
-		ExecuteRequest(url);
-	}
-
+	
 
 
 
@@ -162,7 +156,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c4e2367d879c01104f8765f73cbb353d</sys_id>
-        <sys_mod_count>86</sys_mod_count>
+        <sys_mod_count>99</sys_mod_count>
         <sys_name>incident_create_main</sys_name>
         <sys_overrides/>
         <sys_package display_value="Zenduty V3" source="x_734544_zendutyv3">7a51ee59879001104f8765f73cbb359b</sys_package>
@@ -170,7 +164,7 @@
         <sys_scope display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</sys_scope>
         <sys_update_name>sys_script_c4e2367d879c01104f8765f73cbb353d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-12-14 09:29:17</sys_updated_on>
+        <sys_updated_on>2021-12-14 13:00:34</sys_updated_on>
         <template/>
         <when>async_always</when>
     </sys_script>

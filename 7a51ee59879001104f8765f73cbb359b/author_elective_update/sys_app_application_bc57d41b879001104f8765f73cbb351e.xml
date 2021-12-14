@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-13 10:01:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bc57d41b879001104f8765f73cbb351e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Zenduty Settings</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Zenduty V3" source="x_734544_zendutyv3">7a51ee59879001104f8765f73cbb359b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</sys_scope>
+        <sys_update_name>sys_app_application_bc57d41b879001104f8765f73cbb351e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-13 10:01:43</sys_updated_on>
+        <title>Zenduty Settings</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</application>
+        <file_path/>
+        <instance_id>e31125b8db04fb4042b321c40596195e</instance_id>
+        <instance_name>dev74539</instance_name>
+        <name>sys_app_application_bc57d41b879001104f8765f73cbb351e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name/><order>100</order><roles/><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-12-13 10:01:43</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>bc57d41b879001104f8765f73cbb351e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Zenduty Settings</sys_name><sys_overrides/><sys_package display_value="Zenduty V3" source="x_734544_zendutyv3">7a51ee59879001104f8765f73cbb359b</sys_package><sys_policy/><sys_scope display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</sys_scope><sys_update_name>sys_app_application_bc57d41b879001104f8765f73cbb351e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-12-13 10:01:43</sys_updated_on><title>Zenduty Settings</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>1344995527</payload_hash>
+        <record_name>Zenduty Settings</record_name>
+        <reverted_from/>
+        <source>07a27882875441104f8765f73cbb35de</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-13 10:01:43</sys_created_on>
+        <sys_id>9487581b879001104f8765f73cbb3524</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17db33daf130000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-13 10:01:43</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>dc87581be29001103fd6b143248c5423</update_guid>
+        <update_guid_history>dc87581be29001103fd6b143248c5423:1344995527</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Zenduty Settings">258d026787d001104f8765f73cbb3554</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-14 13:15:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>7ac605e3a0324fd3ad781967d2b726d1</sys_id>
+        <sys_metadata>bc57d41b879001104f8765f73cbb351e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Zenduty Settings</sys_name>
+        <sys_package display_value="Zenduty V3" source="x_734544_zendutyv3">7a51ee59879001104f8765f73cbb359b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</sys_scope>
+        <sys_scope_delete display_value="">0524978403c24b66bac6a7cf88152c64</sys_scope_delete>
+        <sys_update_name>sys_app_application_bc57d41b879001104f8765f73cbb351e</sys_update_name>
+        <sys_update_version display_value="sys_app_application_bc57d41b879001104f8765f73cbb351e">9487581b879001104f8765f73cbb3524</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-14 13:15:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
