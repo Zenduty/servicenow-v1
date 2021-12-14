@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="integration" max_length="40" name="x_734544_zendutyv3_integration" sizeclass="0" type="collection">
+        <element label="Assignment group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
+        <element label="Integration key" max_length="40" name="integration_key" type="string"/>
+        <index name="index">
+            <element name="assignment_group"/>
+        </index>
+    </element>
+</database>

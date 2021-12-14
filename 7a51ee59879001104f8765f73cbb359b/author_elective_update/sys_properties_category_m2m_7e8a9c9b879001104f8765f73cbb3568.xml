@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="DELETE">
+        <category display_value="Auth Settings">17a55897879001104f8765f73cbb350b</category>
+        <order>200</order>
+        <property display_value="x_734544_zendutyv3.Api Key" name="x_734544_zendutyv3.Api Key">3c2a589b879001104f8765f73cbb35b0</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-13 10:15:00</sys_created_on>
+        <sys_id>7e8a9c9b879001104f8765f73cbb3568</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_734544_zendutyv3.Api Key.Auth Settings</sys_name>
+        <sys_package display_value="Zenduty V3" source="x_734544_zendutyv3">7a51ee59879001104f8765f73cbb359b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_7e8a9c9b879001104f8765f73cbb3568</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-13 10:16:18</sys_updated_on>
+    </sys_properties_category_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</application>
+        <file_path/>
+        <instance_id>e31125b8db04fb4042b321c40596195e</instance_id>
+        <instance_name>dev74539</instance_name>
+        <name>sys_properties_category_m2m_7e8a9c9b879001104f8765f73cbb3568</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Auth Settings">17a55897879001104f8765f73cbb350b</category><order>200</order><property display_value="x_734544_zendutyv3.Api Key" name="x_734544_zendutyv3.Api Key">3c2a589b879001104f8765f73cbb35b0</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-12-13 10:15:00</sys_created_on><sys_id>7e8a9c9b879001104f8765f73cbb3568</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_734544_zendutyv3.Api Key.Auth Settings</sys_name><sys_package display_value="Zenduty V3" source="x_734544_zendutyv3">7a51ee59879001104f8765f73cbb359b</sys_package><sys_policy/><sys_scope display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</sys_scope><sys_update_name>sys_properties_category_m2m_7e8a9c9b879001104f8765f73cbb3568</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-12-13 10:16:18</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+        <payload_hash>-77340808</payload_hash>
+        <record_name>x_734544_zendutyv3.Api Key.Auth Settings</record_name>
+        <reverted_from/>
+        <source>07a27882875441104f8765f73cbb35de</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-13 10:16:18</sys_created_on>
+        <sys_id>fdda14db879001104f8765f73cbb356e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17db34b05f40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-13 10:16:18</sys_updated_on>
+        <type>Category Property</type>
+        <update_guid>b5da14dbcb900110fd1fada45fa4ba6e</update_guid>
+        <update_guid_history>b5da14dbcb900110fd1fada45fa4ba6e:-77340808,d2ca9c9b179001102780bd3e33380e9a:367469944,fa8a9c9b2c900110cb67e23f96be3a6a:-1432324233</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-14 09:11:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties_category_m2m">sys_properties_category_m2m</sys_db_object>
+        <sys_id>065c24d28892415580aadd3c639feca9</sys_id>
+        <sys_metadata>7e8a9c9b879001104f8765f73cbb3568</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_734544_zendutyv3.Api Key.Auth Settings</sys_name>
+        <sys_package display_value="Zenduty V3" source="x_734544_zendutyv3">7a51ee59879001104f8765f73cbb359b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</sys_scope>
+        <sys_scope_delete display_value="">0524978403c24b66bac6a7cf88152c64</sys_scope_delete>
+        <sys_update_name>sys_properties_category_m2m_7e8a9c9b879001104f8765f73cbb3568</sys_update_name>
+        <sys_update_version display_value="sys_properties_category_m2m_7e8a9c9b879001104f8765f73cbb3568">fdda14db879001104f8765f73cbb356e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-14 09:11:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

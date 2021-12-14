@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_template">
+    <sys_template action="DELETE">
+        <active>true</active>
+        <global>false</global>
+        <group/>
+        <groups/>
+        <link_element/>
+        <name>TEMPLATE2</name>
+        <next/>
+        <next_child/>
+        <roles/>
+        <short_description/>
+        <show_on_template_bar>true</show_on_template_bar>
+        <stand_alone>false</stand_alone>
+        <sys_class_name>sys_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-09 08:34:21</sys_created_on>
+        <sys_id>69fc9ffd871041104f8765f73cbb35c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TEMPLATE2</sys_name>
+        <sys_package display_value="Zenduty V3" source="x_734544_zendutyv3">7a51ee59879001104f8765f73cbb359b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</sys_scope>
+        <sys_update_name>sys_template_69fc9ffd871041104f8765f73cbb35c3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-09 08:34:21</sys_updated_on>
+        <table>x_734544_zendutyv3_settings_table</table>
+        <template>token=^EQ</template>
+        <user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user>
+        <view/>
+    </sys_template>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</application>
+        <file_path/>
+        <instance_id>e31125b8db04fb4042b321c40596195e</instance_id>
+        <instance_name>dev74539</instance_name>
+        <name>sys_template_69fc9ffd871041104f8765f73cbb35c3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_template"><sys_template action="INSERT_OR_UPDATE"><active>true</active><global>false</global><group/><groups/><link_element/><name>TEMPLATE2</name><next/><next_child/><roles/><short_description/><show_on_template_bar>true</show_on_template_bar><stand_alone>false</stand_alone><sys_class_name>sys_template</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-12-09 08:34:21</sys_created_on><sys_id>69fc9ffd871041104f8765f73cbb35c3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>TEMPLATE2</sys_name><sys_package display_value="Zenduty V3" source="x_734544_zendutyv3">7a51ee59879001104f8765f73cbb359b</sys_package><sys_policy/><sys_scope display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</sys_scope><sys_update_name>sys_template_69fc9ffd871041104f8765f73cbb35c3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-12-09 08:34:21</sys_updated_on><table>x_734544_zendutyv3_settings_table</table><template>token=^EQ</template><user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user><view/></sys_template></record_update>]]></payload>
+        <payload_hash>-2092565304</payload_hash>
+        <record_name>TEMPLATE2</record_name>
+        <reverted_from/>
+        <source>ba51ee59879001104f8765f73cbb359d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-09 08:34:21</sys_created_on>
+        <sys_id>b92d5331875041104f8765f73cbb3547</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d9e5441e10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-09 08:34:21</sys_updated_on>
+        <type>Template</type>
+        <update_guid>f12d533154504110c37b1c094e5d6a47</update_guid>
+        <update_guid_history>f12d533154504110c37b1c094e5d6a47:-2092565304</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-14 09:20:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_template">sys_template</sys_db_object>
+        <sys_id>1789e09abeda4558913cc490ccc62944</sys_id>
+        <sys_metadata>69fc9ffd871041104f8765f73cbb35c3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TEMPLATE2</sys_name>
+        <sys_package display_value="Zenduty V3" source="x_734544_zendutyv3">7a51ee59879001104f8765f73cbb359b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</sys_scope>
+        <sys_scope_delete display_value="">0524978403c24b66bac6a7cf88152c64</sys_scope_delete>
+        <sys_update_name>sys_template_69fc9ffd871041104f8765f73cbb35c3</sys_update_name>
+        <sys_update_version display_value="sys_template_69fc9ffd871041104f8765f73cbb35c3">b92d5331875041104f8765f73cbb3547</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-14 09:20:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

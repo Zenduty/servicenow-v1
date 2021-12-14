@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category">
+    <sys_properties_category action="DELETE">
+        <name>Auth Settings</name>
+        <sys_class_name>sys_properties_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-13 10:06:10</sys_created_on>
+        <sys_id>1588541b879001104f8765f73cbb35a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Auth Settings</sys_name>
+        <sys_package display_value="Zenduty V3" source="x_734544_zendutyv3">7a51ee59879001104f8765f73cbb359b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</sys_scope>
+        <sys_update_name>sys_properties_category_1588541b879001104f8765f73cbb35a7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-13 10:06:10</sys_updated_on>
+        <title><![CDATA[<p>The following properties determine the zenduty settings  </p>]]></title>
+    </sys_properties_category>
+    <sys_translated_text action="DELETE" query="documentkey=1588541b879001104f8765f73cbb35a7"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</application>
+        <file_path/>
+        <instance_id>e31125b8db04fb4042b321c40596195e</instance_id>
+        <instance_name>dev74539</instance_name>
+        <name>sys_properties_category_1588541b879001104f8765f73cbb35a7</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_properties_category"&gt;&lt;sys_properties_category action="INSERT_OR_UPDATE"&gt;&lt;name&gt;Auth Settings&lt;/name&gt;&lt;sys_class_name&gt;sys_properties_category&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-12-13 10:06:10&lt;/sys_created_on&gt;&lt;sys_id&gt;1588541b879001104f8765f73cbb35a7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Auth Settings&lt;/sys_name&gt;&lt;sys_package display_value="Zenduty V3" source="x_734544_zendutyv3"&gt;7a51ee59879001104f8765f73cbb359b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Zenduty V3"&gt;7a51ee59879001104f8765f73cbb359b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_properties_category_1588541b879001104f8765f73cbb35a7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-12-13 10:06:10&lt;/sys_updated_on&gt;&lt;title&gt;&lt;![CDATA[&lt;p&gt;The following properties determine the zenduty settings  &lt;/p&gt;]]&gt;&lt;/title&gt;&lt;/sys_properties_category&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=1588541b879001104f8765f73cbb35a7"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-700004865</payload_hash>
+        <record_name>Auth Settings</record_name>
+        <reverted_from/>
+        <source>07a27882875441104f8765f73cbb35de</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-13 10:06:10</sys_created_on>
+        <sys_id>9d88541b879001104f8765f73cbb35a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17db341bedb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-13 10:06:10</sys_updated_on>
+        <type>System Property Category</type>
+        <update_guid>d588541b5e90011085e91d617687f8a8</update_guid>
+        <update_guid_history>d588541b5e90011085e91d617687f8a8:-700004865</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-12-13 10:06:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties_category">sys_properties_category</sys_db_object>
+        <sys_id>0ac3fa9fbaa84688807788cb405740e4</sys_id>
+        <sys_metadata>1588541b879001104f8765f73cbb35a7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Auth Settings</sys_name>
+        <sys_package display_value="Zenduty V3" source="x_734544_zendutyv3">7a51ee59879001104f8765f73cbb359b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Zenduty V3">7a51ee59879001104f8765f73cbb359b</sys_scope>
+        <sys_scope_delete display_value="">0524978403c24b66bac6a7cf88152c64</sys_scope_delete>
+        <sys_update_name>sys_properties_category_1588541b879001104f8765f73cbb35a7</sys_update_name>
+        <sys_update_version display_value="sys_properties_category_1588541b879001104f8765f73cbb35a7">9d88541b879001104f8765f73cbb35a8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-12-13 10:06:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

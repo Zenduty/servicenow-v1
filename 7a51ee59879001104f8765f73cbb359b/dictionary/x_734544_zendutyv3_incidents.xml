@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="incidents" max_length="40" name="x_734544_zendutyv3_incidents" sizeclass="4" type="collection">
+        <element label="Incident_ID" max_length="32" name="incident_id" reference="incident" type="reference"/>
+        <element label="Incident Number" max_length="40" name="incident_number" type="integer"/>
+        <element label="message" max_length="40" name="message" type="string"/>
+        <element label="summary" max_length="40" name="summary" type="string"/>
+        <element label="Zenduty ID" max_length="40" name="zenduty_id" type="string"/>
+        <index name="index">
+            <element name="incident_id"/>
+        </index>
+    </element>
+</database>
